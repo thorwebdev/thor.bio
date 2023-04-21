@@ -1,9 +1,10 @@
-# fresh website
+# A fresh Thor.Bio website
 
-This is the fresh website source. The fresh website contains:
+This is the source of thor.bio, it contains
 
 - a homepage
-- a documentation page
+- a showcase
+- a blog page (markdown rendering)
 
 ### Usage
 
