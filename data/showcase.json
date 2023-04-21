@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Next.js OpenAI Doc Search",
+    "link": "https://twitter.com/supabase/status/1643986169867423750",
+    "github": "supabase-community/nextjs-openai-doc-search#nextjs-openai-doc-search-starter",
+    "image": "https://repository-images.githubusercontent.com/622081419/0f9c7659-b33a-4293-8132-775b46432d21"
+  },
+  {
+    "title": "Designing with AI",
+    "link": "https://supabase.com/blog/designing-with-ai-midjourney",
+    "github": "supabase/supabase/tree/master/apps/www/pages/launch-week",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Flaunch-week-7%2Fdesigning-with-ai-midjourney%2Fheader.png&w=3840&q=75"
+  },
+  {
+    "title": "Next.js Subscription Payments",
+    "link": "https://subscription-payments.vercel.app/",
+    "github": "vercel/nextjs-subscription-payments#nextjs-subscription-payments-starter",
+    "image": "https://repository-images.githubusercontent.com/311865672/2999fb00-5658-11eb-99e9-f2cb1a403ba2"
+  },
+  {
+    "title": "Deno SaaSKit",
+    "link": "https://saaskit.deno.dev/",
+    "github": "denoland/saaskit",
+    "image": "https://fresh.deno.dev/showcase/deno-saaskit2x.jpg"
+  }
+]

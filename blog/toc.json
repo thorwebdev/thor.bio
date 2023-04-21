@@ -1,0 +1,17 @@
+{
+  "introduction": {
+    "title": "Introduction"
+  },
+  "archive": {
+    "title": "Archive",
+    "pages": [
+      [
+        "2020-05-28-building-a-sticker-marketplace",
+        "Building a Sticker Marketplace"
+      ],
+      ["2019-09-17-moving-to-singapore", "Moving to Singapore"],
+      ["2019-01-22-ecstatic-commerce", "(Ec)Static Commerce"],
+      ["2019-01-08-the-creation", "The Creation"]
+    ]
+  }
+}
