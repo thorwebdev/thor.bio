@@ -27,6 +27,7 @@ export default function MainPage(props: PageProps) {
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="425" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <div class="flex flex-col min-h-screen selection::bg-thor-bg selection::text-thor-black">
