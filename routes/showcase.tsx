@@ -8,7 +8,7 @@ export default function ShowcasePage() {
   return (
     <>
       <Head>
-        <title>Showcase | fresh</title>
+        <title>Showcase | Thor.Bio</title>
       </Head>
       <Header title="showcase" active="/showcase" />
 
