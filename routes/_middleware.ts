@@ -69,25 +69,40 @@ function ga4(
     });
 }
 
-export async function handler(
-  req: Request,
-  ctx: MiddlewareHandlerContext
-): Promise<Response> {
-  let err;
-  let res: Response;
-  const start = performance.now();
-  try {
-    const resp = await ctx.next();
-    const headers = new Headers(resp.headers);
-    res = new Response(resp.body, { status: resp.status, headers });
-    return res;
-  } catch (e) {
-    res = new Response("Internal Server Error", {
-      status: 500,
-    });
-    err = e;
-    throw e;
-  } finally {
-    ga4(req, ctx, res!, start, err);
-  }
-}
+export const handler = [
+  async function mainHandler(
+    req: Request,
+    ctx: MiddlewareHandlerContext
+  ): Promise<Response> {
+    let err;
+    let res: Response;
+    const start = performance.now();
+    try {
+      const resp = await ctx.next();
+      const headers = new Headers(resp.headers);
+      res = new Response(resp.body, { status: resp.status, headers });
+      return res;
+    } catch (e) {
+      res = new Response("Internal Server Error", {
+        status: 500,
+      });
+      err = e;
+      throw e;
+    } finally {
+      ga4(req, ctx, res!, start, err);
+    }
+  },
+  async function redirects(
+    req: Request,
+    ctx: MiddlewareHandlerContext
+  ): Promise<Response> {
+    const { pathname } = new URL(req.url);
+    switch (pathname) {
+      case "/15":
+        return Response.redirect("https://cal.com/thorwebdev/15min", 307);
+      case "/30":
+        return Response.redirect("https://cal.com/thorwebdev/30min", 307);
+    }
+    return ctx.next();
+  },
+];
