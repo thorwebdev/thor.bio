@@ -102,6 +102,8 @@ export const handler = [
         return Response.redirect("https://cal.com/thorwebdev/15min", 307);
       case "/30":
         return Response.redirect("https://cal.com/thorwebdev/30min", 307);
+      case "/qr":
+        return Response.redirect("https://supaswagstore.deno.dev/", 307);
     }
     return ctx.next();
   },
