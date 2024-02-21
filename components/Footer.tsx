@@ -1,29 +1,29 @@
-import { ComponentChildren } from "preact";
-import HammerIcon from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/hammer.tsx";
-import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
+import { ComponentChildren } from 'preact'
+import HammerIcon from 'https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/hammer.tsx'
+import BrandGithub from 'https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx'
 type Props = {
-  children?: ComponentChildren;
-};
+  children?: ComponentChildren
+}
 
 export default function Footer({ children }: Props) {
   const menus = [
     {
-      title: "Find me online",
+      title: 'Find me online',
       children: [
-        { name: "Twitter", href: "https://twitter.com/thorwebdev" },
-        { name: "GitHub", href: "https://github.com/thorwebdev" },
-        { name: "LinkedIn", href: "https://www.linkedin.com/in/thorwebdev/" },
-        { name: "Instagram", href: "https://www.instagram.com/thorwebdev/" },
+        { name: 'Twitter', href: 'https://twitter.com/thorwebdev' },
+        { name: 'GitHub', href: 'https://github.com/thorwebdev' },
+        { name: 'LinkedIn', href: 'https://www.linkedin.com/in/thorwebdev/' },
+        { name: 'Instagram', href: 'https://www.instagram.com/thorwebdev/' },
       ],
     },
     {
-      title: "Sitemap",
+      title: 'Sitemap',
       children: [
-        { name: "Showcase", href: "/showcase" },
-        { name: "Blog", href: "/blog" },
+        { name: 'Showcase', href: '/showcase' },
+        { name: 'Blog', href: '/blog/introduction' },
       ],
     },
-  ];
+  ]
 
   return (
     <footer class="border(t-2 gray-200) bg-gray-100 flex flex-col gap-4 justify-center">
@@ -79,5 +79,5 @@ export default function Footer({ children }: Props) {
         </div>
       </div>
     </footer>
-  );
+  )
 }

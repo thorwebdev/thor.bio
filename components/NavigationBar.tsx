@@ -1,32 +1,32 @@
-import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
-import BrandTwitter from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-twitter.tsx";
+import BrandGithub from 'https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx'
+import BrandTwitter from 'https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-twitter.tsx'
 
 export default function NavigationBar(props: {
-  active: string;
-  class?: string;
+  active: string
+  class?: string
 }) {
   const items = [
     {
-      name: "Showcase",
-      href: "/showcase",
+      name: 'Showcase',
+      href: '/showcase',
     },
     {
-      name: "Blog",
-      href: "/blog",
+      name: 'Blog',
+      href: '/blog/introduction',
     },
-  ];
-  const isHome = props.active == "/";
+  ]
+  const isHome = props.active == '/'
   return (
-    <nav class={"flex " + props.class ?? ""}>
+    <nav class={'flex ' + props.class ?? ''}>
       <ul class="flex justify-center items-center gap-4 mx-4 my-6 flex-wrap">
         {items.map((item) => (
           <li>
             <a
               href={item.href}
               class={`p-2 ${
-                isHome ? "text-green-900" : "text-gray-600"
+                isHome ? 'text-green-900' : 'text-gray-600'
               } hover:underline ${
-                props.active == item.href ? "font-bold" : ""
+                props.active == item.href ? 'font-bold' : ''
               }`}
             >
               {item.name}
@@ -52,5 +52,5 @@ export default function NavigationBar(props: {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
