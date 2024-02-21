@@ -1,10 +1,10 @@
 ---
 description: |
-  Bringing a group of Software Engineers, open source and indie hackers to Taiwan to co-work and explore Taipei.
+  Bringing a group of Software Engineers, Open Source and Indie Hackers to Taiwan to co-work and explore Taipei.
 og: '/blog/hackerhouse-taiwan/hackerhouse-taiwan-og.jpeg'
 ---
 
-[Supabase](https://supabase.com/) is a fully remote company with employees all over the globe, allowing us to work from wherever we choose. Once a year, we gather everyone in one physyical location for our yearly offsite, but additionally some SupaTroopers personally organize so called HackerHouses, renting a house in an interesting location to work and spend time together. Over the last couple of years we've done these in Munich - Germany ([where SupaBrew was born](https://supabase.com/blog/supabrew)), Bali - Indonesia, and Penang - Malaysia.
+[Supabase](https://supabase.com/) is a fully remote company with employees all over the globe, allowing us to work from wherever we choose. Once a year, we gather everyone in one physyical location for our [yearly offsite](https://supabase.com/careers), but additionally some SupaTroopers personally organize so called HackerHouses, renting a house in an interesting location to work and spend time together. Over the last couple of years we've done these in Munich - Germany ([where SupaBrew was born](https://supabase.com/blog/supabrew)), Bali - Indonesia, and Penang - Malaysia.
 
 I personally split my time between Singapore and Taiwan (Taiwan offers a [Gold Card visa program](https://goldcard.nat.gov.tw/en/) which makes this very convenient, especially for folks working in [digital fields](https://goldcard.nat.gov.tw/en/qualification/field-of-digital/), including a [special program for open source contributors](https://x.com/audreyt/status/1659203896181690368?s=20)!) and have been wanting to organise a HackerHouse Taiwan edition. And this time, rather than only inviting Supabase colleagues, I decided to open it up to other remote engineers, open source and indie hackers to come and work together from Taipei and get to know Taiwan, and let me tell you - it was a blast!
 
@@ -34,7 +34,7 @@ For housing we partnered with [Star Hostel Taipei East 合星青年旅館](https
 
 ## Work time
 
-When I reached out to my friends at PicCollage I really didn't expect that they would offer to host us for free, but that's exactly what they did. Taiwanese people are extremely welcoming and generous! When [John Fan](https://www.linkedin.com/in/johnfan/), one of the PicCollage co-founders, heard about the idea, he said he liked it and offered us to join them at their conveniently located Taipei Headquarters in the Da’an District!
+Taiwanese people are extremely welcoming and generous! When [John Fan](https://www.linkedin.com/in/johnfan/), one of the PicCollage co-founders, heard about the idea, he said he liked it and offered us to join them at their conveniently located Taipei Headquarters in the Da’an District!
 
 With a great view of Taipei 101 and multiple rooms at our disposal we managed to have a productive week. Thank you once again! 💚
 
