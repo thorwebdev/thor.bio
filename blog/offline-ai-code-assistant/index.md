@@ -30,14 +30,8 @@ Let's have a look at how we can set this up with VS Code for the absolute offlin
     "url": "http://127.0.0.1:11434",
     "model": "llama3:8b"
   },
-  // Cody chat configuration:
-  "cody.dev.models": [
-    {
-      "provider": "ollama",
-      "model": "llama3:8b",
-      "apiEndpoint": "http://127.0.0.1:11434"
-    }
-  ],
+  // Enable Ollama for Cody Chat:
+  "cody.experimental.ollamaChat": true,
   // optional but useful to see detailed logs in the OUTPUT tab
   // (make sure to select "Cody by Sourcegraph" from the dropbdown)
   "cody.debug.verbose": true
