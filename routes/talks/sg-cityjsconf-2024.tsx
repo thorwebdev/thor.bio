@@ -41,6 +41,27 @@ function Content() {
         FRI, JUL 26, 2024 · CityJS Conf Singapore
       </h3>
       <p class="text-gray-600">
+        Participate in the demo for the chance to win a Supabase T-Shirt!
+      </p>
+      <ul class="text-gray-600 list-disc pl-5 mt-2">
+        <li class="mt-2">
+          <a
+            class="underline"
+            href="https://go.thor.bio/whisper-receiver"
+          >
+            Open the demo (best on desktop)
+          </a>
+        </li>
+        <li class="mt-2">
+          <a
+            class="underline"
+            href="https://x.com/thorwebdev"
+          >
+            Take a (screen) recording or screenshot during the live demo and Tweet it tagging @thorwebdev
+          </a>
+        </li>
+      </ul>
+      <p class="text-gray-600">
         Find the resources and examples from my talk below:
       </p>
       <ul class="text-gray-600 list-disc pl-5 mt-2">
