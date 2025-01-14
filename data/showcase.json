@@ -1,5 +1,125 @@
 [
   {
+    "title": "Nuxt.js documentary",
+    "link": "https://youtu.be/uvG11I-ftfo?si=36awjqrpE72j27mQ",
+    "github": "https://github.com/nuxt-modules/supabase",
+    "image": "https://img.youtube.com/vi/uvG11I-ftfo/hqdefault.jpg"
+  },
+  {
+    "title": "OpenAI DevDay 2024",
+    "link": "https://youtu.be/0_sHinA0RV0?si=Ro2rdRN7CG2Bs0PL",
+    "github": "https://github.com/supabase-community/database-build",
+    "image": "https://img.youtube.com/vi/0_sHinA0RV0/hqdefault.jpg"
+  },
+  {
+    "title": "Self-host Maps",
+    "link": "https://supabase.com/blog/self-host-maps-storage-protomaps",
+    "github": "https://github.com/supabase/supabase/tree/master/examples/storage/protomaps",
+    "image": "https://img.youtube.com/vi/l7QBpiLRwJc/hqdefault.jpg"
+  },
+  {
+    "title": "Background Tasks",
+    "link": "https://youtu.be/rSKBTJxG9VA?si=QQPzac8PpjUtLwc9",
+    "github": "https://github.com/supabase/supabase/blob/master/examples/edge-functions/supabase/functions/background-upload-storage/index.ts",
+    "image": "https://img.youtube.com/vi/rSKBTJxG9VA/hqdefault.jpg"
+  },
+  {
+    "title": "Local-first Realtime App",
+    "link": "https://supabase.com/blog/local-first-expo-legend-state",
+    "github": "https://github.com/expo/examples/tree/master/with-legend-state-supabase",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Flocal-first-expo-legend_state%2Flocal-first-expo-legend_state-thumb.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "React Email and Resend",
+    "link": "https://youtu.be/tlA7BomSCgU?si=Lflwq68ERXY4t5P7",
+    "github": "https://github.com/supabase/supabase/tree/master/examples/edge-functions/supabase/functions/auth-hook-react-email-resend",
+    "image": "https://img.youtube.com/vi/tlA7BomSCgU/hqdefault.jpg"
+  },
+  {
+    "title": "Upload Videos",
+    "link": "https://youtu.be/EuiE5VQ-rIY?si=3GQJA1ntO-k8lQGl",
+    "github": "https://github.com/thorwebdev/webcam-audio-description-ai/blob/main/index.html",
+    "image": "https://img.youtube.com/vi/EuiE5VQ-rIY/hqdefault.jpg"
+  },
+  {
+    "title": "Llamafile in Edge Functions",
+    "link": "https://supabase.com/blog/mozilla-llamafile-in-supabase-edge-functions",
+    "github": "https://github.com/supabase/supabase/tree/master/examples/ai/llamafile-edge",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fmozilla-llamafile%2Fmozilla-llamafile-og.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Uploads on Mobile",
+    "link": "https://youtu.be/_TgkAMm1-4U?si=xiWOROx0HoK28FQf",
+    "github": "https://github.com/thorwebdev/supa-expo-tus",
+    "image": "https://img.youtube.com/vi/_TgkAMm1-4U/hqdefault.jpg"
+  },
+  {
+    "title": "GitHub Copilot Extension",
+    "link": "https://supabase.com/blog/github-copilot-extension-for-vs-code",
+    "github": "https://marketplace.visualstudio.com/items?itemName=Supabase.vscode-supabase-extension",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Flw12%2Fday-1%2Fgithub_copilot_extension-thumb.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Browser Semantic AI Search",
+    "link": "https://supabase.com/blog/in-browser-semantic-search-pglite",
+    "github": "https://github.com/huggingface/transformers.js-examples/tree/main/pglite-semantic-search",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fbrowser-semantic-search%2Fbrowser_semantic_search_og.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "React Native Maps",
+    "link": "https://youtu.be/9FuRuD8WKyU?si=pL6HW1r_3MXHKMgT",
+    "github": "https://github.com/thorwebdev/expo-dom-protomaps",
+    "image": "https://img.youtube.com/vi/9FuRuD8WKyU/hqdefault.jpg"
+  },
+  {
+    "title": "Realtime AI - Babelfish",
+    "link": "https://youtu.be/uT945Rh5sl8?si=md1JkIpQw6bmZX2k",
+    "github": "https://github.com/supabase-community/babelfish.ai",
+    "image": "https://img.youtube.com/vi/uT945Rh5sl8/hqdefault.jpg"
+  },
+  {
+    "title": "Behind the Code - Atomic CRM",
+    "link": "https://youtu.be/e7p0irjQZfw?si=MFSUOtAsLpKlM6-Z",
+    "github": "https://github.com/marmelab/atomic-crm",
+    "image": "https://img.youtube.com/vi/e7p0irjQZfw/hqdefault.jpg"
+  },
+  {
+    "title": "Supabase on JSR",
+    "link": "https://supabase.com/blog/supabase-js-on-jsr",
+    "github": "https://jsr.io/@supabase/supabase-js",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fjsr_supabase%2Fjsr_supabase.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Realtime Location Sharing",
+    "link": "https://supabase.com/blog/postgres-realtime-location-sharing-with-maplibre",
+    "github": "https://github.com/thorwebdev/location-tRacer/blob/main/app/app/realtimemap/%5Bevent%5D/page.tsx",
+    "image": "https://img.youtube.com/vi/7hXNPnu1gNU/hqdefault.jpg"
+  },
+  {
+    "title": "Open Source Maps API",
+    "link": "https://supabase.com/blog/postgis-generate-vector-tiles",
+    "github": "https://github.com/bdon/supabase-vector-tile",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fpostgis_vector_tiles%2Foverture_postgis_mvt.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Behind the Code of Midday AI",
+    "link": "https://youtu.be/CePdDYF8crw?si=OicQwNa5YUdAMKc5",
+    "github": "https://github.com/midday-ai/midday",
+    "image": "https://img.youtube.com/vi/CePdDYF8crw/hqdefault.jpg"
+  },
+  {
+    "title": "Cal.com Expert Marketplace",
+    "link": "https://supabase.com/blog/calcom-platform-starter-kit-nextjs-supabase",
+    "github": "https://github.com/calcom/platform-starter-kit",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fcalcom_platform_starter%2Fcalcom_platform_starter_og.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Supabase Bootstrap",
+    "link": "https://supabase.com/blog/supabase-bootstrap",
+    "github": "https://github.com/supabase/cli",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fga-week%2Fbootstrap%2Fthumb.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
     "title": "Next.js OpenAI Doc Search",
     "link": "https://twitter.com/supabase/status/1643986169867423750",
     "github": "supabase-community/nextjs-openai-doc-search#nextjs-openai-doc-search-starter",
