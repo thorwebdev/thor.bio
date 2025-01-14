@@ -78,7 +78,7 @@ function Showcase() {
   return (
     <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
       <h2 id="showcase" class="text(3xl gray-600) font-bold">
-        <a href="#showcase" class="hover:underline">
+        <a href="./showcase" class="hover:underline">
           Showcase
         </a>
       </h2>
