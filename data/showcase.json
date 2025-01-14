@@ -1,5 +1,29 @@
 [
   {
+    "title": "Realtime AI - Babelfish",
+    "link": "https://youtu.be/uT945Rh5sl8?si=md1JkIpQw6bmZX2k",
+    "github": "https://github.com/supabase-community/babelfish.ai",
+    "image": "https://img.youtube.com/vi/uT945Rh5sl8/hqdefault.jpg"
+  },
+  {
+    "title": "Open Source Maps API",
+    "link": "https://supabase.com/blog/postgis-generate-vector-tiles",
+    "github": "https://github.com/bdon/supabase-vector-tile",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fpostgis_vector_tiles%2Foverture_postgis_mvt.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
+    "title": "Self-host Maps",
+    "link": "https://supabase.com/blog/self-host-maps-storage-protomaps",
+    "github": "https://github.com/supabase/supabase/tree/master/examples/storage/protomaps",
+    "image": "https://img.youtube.com/vi/l7QBpiLRwJc/hqdefault.jpg"
+  },
+  {
+    "title": "Supabase Bootstrap",
+    "link": "https://supabase.com/blog/supabase-bootstrap",
+    "github": "https://github.com/supabase/cli",
+    "image": "https://supabase.com/_next/image?url=%2Fimages%2Fblog%2Fga-week%2Fbootstrap%2Fthumb.png&w=1080&q=100&dpl=dpl_2g5hqs25ZRLqvMgSPduyk43d7az3"
+  },
+  {
     "title": "Next.js OpenAI Doc Search",
     "link": "https://twitter.com/supabase/status/1643986169867423750",
     "github": "supabase-community/nextjs-openai-doc-search#nextjs-openai-doc-search-starter",
