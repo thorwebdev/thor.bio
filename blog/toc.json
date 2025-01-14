@@ -3,7 +3,11 @@
     "title": "Introduction"
   },
   "hackerhouse-taiwan": {
-    "title": "HackerHouse Taiwan"
+    "title": "HackerHouse Taiwan",
+    "pages": [
+      ["dec-2024", "December 2024"],
+      ["feb-2024", "February 2024"]
+    ]
   },
   "offline-ai-code-assistant": {
     "title": "Offline AI Code Asisstant"
