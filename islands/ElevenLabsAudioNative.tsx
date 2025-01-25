@@ -1,15 +1,13 @@
-// ElevenLabsAudioNative.tsx
-
-'use client';
-
 import { useEffect } from 'preact/hooks';
+import { ComponentChildren } from "preact";
+
 
 export type ElevenLabsProps = {
   publicUserId: string;
   textColorRgba?: string;
   backgroundColorRgba?: string;
   size?: 'small' | 'large';
-  children?: preact.ComponentChildren;
+  children?: ComponentChildren;
 };
 
 export const ElevenLabsAudioNative = ({
@@ -20,6 +18,7 @@ export const ElevenLabsAudioNative = ({
   children,
 }: ElevenLabsProps) => {
   useEffect(() => {
+    console.log('useEffect');
     const script = document.createElement('script');
 
     script.src = 'https://elevenlabs.io/player/audioNativeHelper.js';
