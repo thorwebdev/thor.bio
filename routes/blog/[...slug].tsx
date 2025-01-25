@@ -12,6 +12,8 @@ import {
   TableOfContentsEntry,
 } from '../../data/blog.ts'
 
+import { ElevenLabsAudioNative } from '../../components/ElevenLabsAudioNative.tsx';
+
 interface Data {
   page: Page
 }
@@ -154,6 +156,7 @@ function Content(props: { page: Page }) {
       <h1 class="text(4xl gray-900) tracking-tight font-extrabold mt-6">
         {props.page.title}
       </h1>
+      <ElevenLabsAudioNative publicUserId="c51422d887dfa49887d76da679fd1a5d8e4146687e47adb71ad173f1c1ddb626" />
       <div
         class="mt-6 markdown-body"
         dangerouslySetInnerHTML={{ __html: html }}
