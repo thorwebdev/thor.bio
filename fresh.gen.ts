@@ -13,6 +13,7 @@ import * as $6 from "./routes/showcase.tsx";
 import * as $7 from "./routes/talks/sg-cityjsconf-2024.tsx";
 import * as $8 from "./routes/talks/sgoss.tsx";
 import * as $9 from "./routes/talks/twml.tsx";
+import * as $$0 from "./islands/ElevenLabsAudioNative.tsx";
 
 const manifest = {
   routes: {
@@ -27,7 +28,9 @@ const manifest = {
     "./routes/talks/sgoss.tsx": $8,
     "./routes/talks/twml.tsx": $9,
   },
-  islands: {},
+  islands: {
+    "./islands/ElevenLabsAudioNative.tsx": $$0,
+  },
   baseUrl: import.meta.url,
   config,
 };

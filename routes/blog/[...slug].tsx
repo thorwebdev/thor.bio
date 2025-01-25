@@ -12,7 +12,7 @@ import {
   TableOfContentsEntry,
 } from '../../data/blog.ts'
 
-import { ElevenLabsAudioNative } from '../../components/ElevenLabsAudioNative.tsx';
+import { ElevenLabsAudioNative } from '../../islands/ElevenLabsAudioNative.tsx';
 
 interface Data {
   page: Page
