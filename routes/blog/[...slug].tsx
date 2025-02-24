@@ -1,68 +1,68 @@
-import { Head } from '$fresh/runtime.ts'
-import { Handlers, PageProps } from '$fresh/server.ts'
-import { frontMatter, gfm } from '../../utils/markdown.ts'
+import { Head } from "$fresh/runtime.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
+import { frontMatter, gfm } from "../../utils/markdown.ts";
 
-import Header from '../../components/Header.tsx'
-import BlogTitle from '../../components/BlogTitle.tsx'
-import BlogSidebar from '../../components/BlogSidebar.tsx'
-import Footer from '../../components/Footer.tsx'
+import Header from "../../components/Header.tsx";
+import BlogTitle from "../../components/BlogTitle.tsx";
+import BlogSidebar from "../../components/BlogSidebar.tsx";
+import Footer from "../../components/Footer.tsx";
 import {
   SLUGS,
   TABLE_OF_CONTENTS,
   TableOfContentsEntry,
-} from '../../data/blog.ts'
+} from "../../data/blog.ts";
 
-import { ElevenLabsAudioNative } from '../../islands/ElevenLabsAudioNative.tsx';
+import { ElevenLabsAudioNative } from "../../islands/ElevenLabsAudioNative.tsx";
 
 interface Data {
-  page: Page
+  page: Page;
 }
 
 interface Page extends TableOfContentsEntry {
-  markdown: string
-  data: Record<string, unknown>
+  markdown: string;
+  data: Record<string, unknown>;
 }
 
 export const handler: Handlers<Data> = {
   async GET(_req, ctx) {
-    const slug = ctx.params.slug
-    if (slug === '') {
-      return new Response('', {
+    const slug = ctx.params.slug;
+    if (slug === "") {
+      return new Response("", {
         status: 307,
-        headers: { location: '/blog/introduction' },
-      })
+        headers: { location: "/blog/introduction" },
+      });
     }
-    if (slug === 'concepts/architechture') {
-      return new Response('', {
+    if (slug === "concepts/architechture") {
+      return new Response("", {
         status: 307,
-        headers: { location: '/blog/concepts/architecture' },
-      })
+        headers: { location: "/blog/concepts/architecture" },
+      });
     }
 
-    const entry = TABLE_OF_CONTENTS[slug]
+    const entry = TABLE_OF_CONTENTS[slug];
     if (!entry) {
-      return ctx.renderNotFound()
+      return ctx.renderNotFound();
     }
-    const url = new URL(`../../${entry.file}`, import.meta.url)
-    const fileContent = await Deno.readTextFile(url)
-    const { body, attrs } = frontMatter<Record<string, unknown>>(fileContent)
-    const page = { ...entry, markdown: body, data: attrs ?? {} }
-    const resp = ctx.render({ page })
-    return resp
+    const url = new URL(`../../${entry.file}`, import.meta.url);
+    const fileContent = await Deno.readTextFile(url);
+    const { body, attrs } = frontMatter<Record<string, unknown>>(fileContent);
+    const page = { ...entry, markdown: body, data: attrs ?? {} };
+    const resp = ctx.render({ page });
+    return resp;
   },
-}
+};
 
 export default function DocsPage(props: PageProps<Data>) {
   const {
     title,
     href,
     data: { description, og },
-  } = props.data.page
+  } = props.data.page;
 
   return (
     <>
       <Head>
-        <title>{title ?? 'Not Found'} | Thor's Blog</title>
+        <title>{title ?? "Not Found"} | Thor's Blog</title>
         <link rel="stylesheet" href={`/gfm.css?build=${__FRSH_BUILD_ID}`} />
         {<meta property="og:title" content={title} />}
         {description && (
@@ -78,9 +78,9 @@ export default function DocsPage(props: PageProps<Data>) {
         <Footer />
       </div>
     </>
-  )
+  );
 }
-import IconBooks from 'https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/books.tsx'
+import IconBooks from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/books.tsx";
 function Main(props: { path: string; page: Page }) {
   return (
     <div class="flex-1">
@@ -111,7 +111,7 @@ function Main(props: { path: string; page: Page }) {
         <Content page={props.page} />
       </div>
     </div>
-  )
+  );
 }
 
 function MobileSidebar(props: { path: string }) {
@@ -138,7 +138,7 @@ function MobileSidebar(props: { path: string }) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 function DesktopSidebar(props: { path: string }) {
@@ -146,53 +146,53 @@ function DesktopSidebar(props: { path: string }) {
     <nav class="w-[16rem] flex-shrink-0 hidden md:block py-8 pr-4 border(r-2 gray-100)">
       <BlogSidebar path={props.path} />
     </nav>
-  )
+  );
 }
 
 function Content(props: { page: Page }) {
-  const html = gfm.render(props.page.markdown)
+  const html = gfm.render(props.page.markdown, { allowIframes: true });
   return (
     <main class="py-6 overflow-hidden">
       <h1 class="text(4xl gray-900) tracking-tight font-extrabold mt-6">
         {props.page.title}
       </h1>
-      <ElevenLabsAudioNative 
-        publicUserId="c51422d887dfa49887d76da679fd1a5d8e4146687e47adb71ad173f1c1ddb626" 
-        backgroundColorRgba="rgba(110,231,183,1)" 
+      <ElevenLabsAudioNative
+        publicUserId="c51422d887dfa49887d76da679fd1a5d8e4146687e47adb71ad173f1c1ddb626"
+        backgroundColorRgba="rgba(110,231,183,1)"
         textColorRgba="rgba(51,51,51,1)"
-       />
+      />
       <div
         class="mt-6 markdown-body"
         dangerouslySetInnerHTML={{ __html: html }}
       />
       <ForwardBackButtons slug={props.page.slug} />
     </main>
-  )
+  );
 }
 
-const button = 'p-2 bg-gray-100 w-full border(1 gray-200) grid'
+const button = "p-2 bg-gray-100 w-full border(1 gray-200) grid";
 
 function ForwardBackButtons(props: { slug: string }) {
-  const currentIndex = SLUGS.findIndex((slug) => slug === props.slug)
-  const previousSlug = SLUGS[currentIndex - 1]
-  const nextSlug = SLUGS[currentIndex + 1]
-  const previous = TABLE_OF_CONTENTS[previousSlug]
-  const next = TABLE_OF_CONTENTS[nextSlug]
+  const currentIndex = SLUGS.findIndex((slug) => slug === props.slug);
+  const previousSlug = SLUGS[currentIndex - 1];
+  const nextSlug = SLUGS[currentIndex + 1];
+  const previous = TABLE_OF_CONTENTS[previousSlug];
+  const next = TABLE_OF_CONTENTS[nextSlug];
 
-  const upper = 'text(sm gray-600)'
-  const category = 'font-normal'
-  const lower = 'text-gray-900 font-medium'
+  const upper = "text(sm gray-600)";
+  const category = "font-normal";
+  const lower = "text-gray-900 font-medium";
 
   return (
     <div class="mt-8 flex flex(col md:row) gap-4">
       {previous && (
         <a href={previous.href} class={`${button} text-left`}>
-          <span class={upper}>{'←'} Previous</span>
+          <span class={upper}>{"←"} Previous</span>
           <span class={lower}>
             <span class={category}>
               {previous.category
                 ? `${TABLE_OF_CONTENTS[previous.category].title}: `
-                : ''}
+                : ""}
             </span>
             {previous.title}
           </span>
@@ -200,17 +200,17 @@ function ForwardBackButtons(props: { slug: string }) {
       )}
       {next && (
         <a href={next.href} class={`${button} text-right`}>
-          <span class={upper}>Next {'→'}</span>
+          <span class={upper}>Next {"→"}</span>
           <span class={lower}>
             <span class={category}>
               {next.category
                 ? `${TABLE_OF_CONTENTS[next.category].title}: `
-                : ''}
+                : ""}
             </span>
             {next.title}
           </span>
         </a>
       )}
     </div>
-  )
+  );
 }
