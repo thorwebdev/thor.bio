@@ -9,11 +9,13 @@ import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/blog/[...slug].tsx";
 import * as $4 from "./routes/gfm.css.ts";
 import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/showcase.tsx";
-import * as $7 from "./routes/talks/sg-cityjsconf-2024.tsx";
-import * as $8 from "./routes/talks/sgoss.tsx";
-import * as $9 from "./routes/talks/twml.tsx";
+import * as $6 from "./routes/reels/hhtw.tsx";
+import * as $7 from "./routes/showcase.tsx";
+import * as $8 from "./routes/talks/sg-cityjsconf-2024.tsx";
+import * as $9 from "./routes/talks/sgoss.tsx";
+import * as $10 from "./routes/talks/twml.tsx";
 import * as $$0 from "./islands/ElevenLabsAudioNative.tsx";
+import * as $$1 from "./islands/InstagramReelsEmbed.tsx";
 
 const manifest = {
   routes: {
@@ -23,13 +25,15 @@ const manifest = {
     "./routes/blog/[...slug].tsx": $3,
     "./routes/gfm.css.ts": $4,
     "./routes/index.tsx": $5,
-    "./routes/showcase.tsx": $6,
-    "./routes/talks/sg-cityjsconf-2024.tsx": $7,
-    "./routes/talks/sgoss.tsx": $8,
-    "./routes/talks/twml.tsx": $9,
+    "./routes/reels/hhtw.tsx": $6,
+    "./routes/showcase.tsx": $7,
+    "./routes/talks/sg-cityjsconf-2024.tsx": $8,
+    "./routes/talks/sgoss.tsx": $9,
+    "./routes/talks/twml.tsx": $10,
   },
   islands: {
     "./islands/ElevenLabsAudioNative.tsx": $$0,
+    "./islands/InstagramReelsEmbed.tsx": $$1,
   },
   baseUrl: import.meta.url,
   config,
