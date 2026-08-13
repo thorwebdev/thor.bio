@@ -2,7 +2,7 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import ArrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/arrow-right.tsx";
 import Projects from "../components/Projects.tsx";
-import projects from "../data/showcase.json" assert { type: "json" };
+import projects from "../data/showcase.json" with { type: "json" };
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 

@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import Projects, { Project } from "../components/Projects.tsx";
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
-import projects from "../data/showcase.json" assert { type: "json" };
+import projects from "../data/showcase.json" with { type: "json" };
 
 export default function ShowcasePage() {
   return (
